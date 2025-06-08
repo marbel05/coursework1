@@ -42,8 +42,7 @@ namespace BookRecommendationBot
 
             _botClient.StartReceiving(UpdateHandler, ErrorHandler);
 
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadKey();
+           
         }
 
         private static Task ErrorHandler(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
